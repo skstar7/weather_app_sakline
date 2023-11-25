@@ -8,7 +8,9 @@
     font-family: 'Poppins', sans-serif;}
 
 body{
-    background: #222;
+    /* background-color: #00feba; */
+    background:linear-gradient(135deg, #a3cec3, #3d308f);
+
 }
 
 .card{
@@ -26,8 +28,8 @@ body{
 .card .search{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: space-evenly;
 }
 
 .search input{
@@ -35,22 +37,32 @@ body{
      outline: 0;
      background: #ebfffc;
      padding: 10px 25px;
-     border-radius: 30px;
+     border-radius: 25px;
      flex: 1;
      height: 60px;
      font-size: 18px;
-     margin-right: 30px;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 30px;
+    overflow: auto;
+    font-weight: bold;
+
+     /* border: red solid; */
 }
 
 .search button {
     width: 100%;
-    border: 0;
-    outline: 0;
+    border: none;
+    outline: none;
     background: #ebfffc;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     cursor: pointer;
+    background: transparent;
+    font-size: 40px;
+    color: aqua;
+
 }
 
 .search button img{

@@ -1,6 +1,6 @@
 const apiKey = "34b7bd49f5d1ec3f385f228d7cb8db04";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-// https://api.openweathermap.org/data/2.5/weather?units=metric&p=
+
 //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 
@@ -16,7 +16,7 @@ async function checkWeather(search){
     }
     else{
         var data = await response.json();
-    // console.log(data);
+    console.log(data.weather[0] );
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + '°c';
 
